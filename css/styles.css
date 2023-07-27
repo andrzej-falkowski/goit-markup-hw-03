@@ -1,0 +1,158 @@
+:root {
+  --button-color: #f4f4fd;
+  --button-text-color: #4d5ae5;
+  --button-hover-text-color: #ffffff;
+  --button-border-color: #e7e9fc;
+  --button-border-hover-color: #404bbf;
+  --button-hover-color: #404bbf;
+  --main-page-button-color: #4d5ae5;
+  --main-page-button-text: #ffffff;
+  --main-page-button-border: #404bbf;
+  --body-text-color: #434455;
+  --main-header-text-color: #ffffff;
+  --header-text-color: #2e2f42;
+  --background-color-dark: #2e2f42;
+  --background-color-light: #f4f4fd;
+  --footer-color: #f4f4fd;
+  --span-color: #4d5ae5;
+  --nav-links-color: #2e2f42;
+  --nav-links-active-color: #404bbf;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--body-text-color);
+}
+.logo {
+  font-family: Raleway;
+  color: var(--header-text-color);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.16667;
+  text-decoration: none;
+}
+span {
+  color: var(--span-color);
+}
+.nav-links {
+  color: var(--nav-links-color);
+  font-weight: 500;
+  line-height: 1.5;
+}
+li {
+  list-style-type: none;
+}
+.contacts {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--body-text-color);
+  text-decoration: none;
+}
+footer {
+  background-color: var(--background-color-dark);
+}
+h1 {
+  color: var(--main-header-text-color);
+  text-align: center;
+  font-size: 56px;
+  line-height: 1.07143;
+}
+h2 {
+  color: var(--header-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11111;
+  text-align: center;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--header-text-color);
+}
+.pic-desc-header {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--header-text-color);
+}
+.header-background {
+  background-color: var(--background-color-dark);
+}
+.ourteam-background {
+  background: var(--background-color-light);
+}
+.main-page-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 4px;
+  background: var(--main-page-button-color);
+  color: var(--main-page-button-text);
+  border: 1px solid var(--main-page-button-border);
+}
+button {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 1.5;
+  background: var(--button-color);
+  color: var(--button-text-color);
+  border: 1px solid var(--button-border-color);
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:hover {
+  background: var(--button-hover-color);
+  border: var(--button-border-hover-color);
+  color: var(--button-hover-text-color);
+}
+button:focus {
+  background: var(--button-hover-color);
+  color: var(--button-hover-text-color);
+  outline-color: transparent;
+}
+a {
+  outline: transparent;
+  text-decoration: none;
+}
+a:focus {
+  color: var(--nav-links-active-color);
+}
+a:hover {
+  color: var(--nav-links-active-color);
+}
+.images-horizontal {
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.buttons-horizontal {
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+}
+.grid-box {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.grid-item {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-basis: calc(33.33%);
+}
+.logo-footer {
+  color: var(--footer-color);
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.p-footer {
+  color: var(--footer-color);
+}
