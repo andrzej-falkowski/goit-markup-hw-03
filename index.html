@@ -9,15 +9,15 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio - Main Page</title>
   </head>
   <body>
     <header class="header-bottom-line">
       <div class="container page-header">
-        <a class="logo" href="#"><span>WEB</span>STUDIO</a>
-        <nav>
+        <nav class="header-navigation">
+          <a class="logo" href="#"><span>WEB</span>STUDIO</a>
           <menu class="menu-nav-links">
             <li>
               <a class="nav-links" href="./index.html" target="_self">Studio</a>
@@ -30,58 +30,69 @@
             <li><a class="nav-links" href="#">Contacts</a></li>
           </menu>
         </nav>
-        <address class="address-position">
-          <a class="contacts" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="contacts contacts-margin" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
+        <address>
+          <ul class="address-position">
+            <li>
+              <a class="contacts" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contacts" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
         </address>
       </div>
     </header>
     <main>
-      <article class="header-background">
-        <h1>Effective Solutions for Your Business</h1>
-        <button class="main-page-button" type="button">Order Service</button>
-      </article>
-      <section class="section">
-        <div class="container feature-list">
-          <div class="feature-list-item">
-            <h3>Strategy</h3>
-            <p>
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </div>
-          <div class="feature-list-item">
-            <h3>Punctuality</h3>
-            <p>
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </div>
-          <div class="feature-list-item">
-            <h3>Diligence</h3>
-            <p>
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </div>
-          <div class="feature-list-item">
-            <h3>Technologies</h3>
-            <p>
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </div>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="h1-hero-section">Effective Solutions for Your Business</h1>
+          <button class="main-page-button" type="button">Order Service</button>
         </div>
       </section>
-      <section class="section">
+      <section class="section-padding-top-bottom">
         <div class="container">
-          <h2>What Are We Doing</h2>
-          <ul class="images-horizontal">
-            <li>
+          <h2 class="visually-hidden">Features List</h2>
+          <ul class="features-list">
+            <li class="feature-list-item">
+              <h3 class="h3-feature-list">Strategy</h3>
+              <p>
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="feature-list-item">
+              <h3 class="h3-feature-list">Punctuality</h3>
+              <p>
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="feature-list-item">
+              <h3 class="h3-feature-list">Diligence</h3>
+              <p>
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="feature-list-item">
+              <h3 class="h3-feature-list">Technologies</h3>
+              <p>
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-padding-bottom">
+        <div class="container">
+          <h2 class="h2-what-are-we-doing">What Are We Doing</h2>
+          <ul class="list-what-are-we-doing">
+            <li class="list-item-what-are-we-doing">
               <img
                 class="image-border"
                 src="./images/computer.jpg"
@@ -90,7 +101,7 @@
                 height="300"
               />
             </li>
-            <li>
+            <li class="list-item-what-are-we-doing">
               <img
                 class="image-border"
                 src="./images/mobileapp.jpg"
@@ -99,7 +110,7 @@
                 height="300"
               />
             </li>
-            <li>
+            <li class="list-item-what-are-we-doing">
               <img
                 class="image-border"
                 src="./images/phone.jpg"
@@ -111,59 +122,63 @@
           </ul>
         </div>
       </section>
-      <section class="ourteam-background section">
+      <section class="ourteam-background section-padding-top-bottom">
         <div class="container">
-          <h2>Our Team</h2>
-          <ul class="images-horizontal">
-            <li class="picture-card">
+          <h2 class="h2-our-team">Our Team</h2>
+          <ul class="list-our-team">
+            <li class="card-our-team">
               <img
-                class="card-no-gap"
                 src="./images/member1.jpg"
                 alt="Dark haired man with a beard in a shirt"
                 width="264"
                 height="260"
               />
-              <p class="pic-desc-header">Mark Guerrero</p>
-              <p class="pic-desc">Product Designer</p>
+              <div class="div-card-our-team">
+                <h3 class="h3-card-our-team">Mark Guerrero</h3>
+                <p class="p-card-our-team">Product Designer</p>
+              </div>
             </li>
-            <li class="picture-card">
+            <li class="card-our-team">
               <img
-                class="card-no-gap"
                 src="./images/member2.jpg"
                 alt="Young smiling man looking to the side"
                 width="264"
                 height="260"
               />
-              <p class="pic-desc-header">Tom Ford</p>
-              <p class="pic-desc">Frontend Developer</p>
+              <div class="div-card-our-team">
+                <p class="h3-card-our-team">Tom Ford</p>
+                <p class="p-card-our-team">Frontend Developer</p>
+              </div>
             </li>
-            <li class="picture-card">
+            <li class="card-our-team">
               <img
-                class="card-no-gap"
                 src="./images/member3.jpg"
                 alt="Young woman with long dark hair wearing a pink sweater"
                 width="264"
                 height="260"
               />
-              <p class="pic-desc-header">Camila Garcia</p>
-              <p class="pic-desc">Marketing</p>
+              <div class="div-card-our-team">
+                <p class="h3-card-our-team">Camila Garcia</p>
+                <p class="p-card-our-team">Marketing</p>
+              </div>
             </li>
-            <li class="picture-card">
+            <li class="card-our-team">
               <img
-                class="card-no-gap"
                 src="./images/member4.jpg"
                 alt="Smiling man with dark hair and a beard"
                 width="264"
                 height="260"
               />
-              <p class="pic-desc-header">Daniel Wilson</p>
-              <p class="pic-desc">UI Designer</p>
+              <div class="div-card-our-team">
+                <p class="h3-card-our-team">Daniel Wilson</p>
+                <p class="p-card-our-team">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <div class="container">
         <a class="logo-footer" href="#"><span>WEB</span>STUDIO</a>
         <p class="p-footer">
