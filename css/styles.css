@@ -85,7 +85,7 @@ span {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  padding: 24px 0;
+  margin: 24px 0;
   text-decoration: none;
 }
 
@@ -106,6 +106,7 @@ span {
 .contacts {
   color: var(--slate);
   text-decoration: none;
+  font-style: normal;
 }
 
 .contacts:hover {
@@ -138,8 +139,6 @@ span {
   color: var(--white);
   border: none;
   display: block;
-  min-width: 169px;
-  height: 56px;
   margin: 48px auto 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
